@@ -29,8 +29,8 @@ export default function Pricing() {
 
         <div className="pricing-grid" style={{
           display: 'grid',
-          gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
-          gap: isMobile ? '16px' : '32px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '32px',
           margin: '0 auto'
         }}>
           {/* Card 1 */}

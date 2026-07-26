@@ -420,8 +420,7 @@ section h2 {
   }
 
   /* Pricing Cards - Stack on mobile */
-  #pricing .pricing-grid {
-    grid-template-columns: 1fr !important;
+  .pricing-grid {
     gap: 16px !important;
   }
 
