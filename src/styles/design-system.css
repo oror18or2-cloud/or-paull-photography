@@ -288,14 +288,16 @@ section h2 {
 
 /* Pricing Grid - Responsive */
 .pricing-grid {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
+  display: flex !important;
+  flex-direction: column !important;
   gap: 32px !important;
 }
 
 @media (min-width: 901px) {
   .pricing-grid {
+    display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
+    flex-direction: unset !important;
   }
 }
 
