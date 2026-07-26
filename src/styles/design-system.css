@@ -286,6 +286,19 @@ section h2 {
   margin-bottom: var(--space-6);
 }
 
+/* Pricing Grid - Responsive */
+.pricing-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 32px !important;
+}
+
+@media (min-width: 901px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
 /* Carousel */
 .carousel {
   position: relative;
