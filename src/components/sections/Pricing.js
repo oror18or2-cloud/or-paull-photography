@@ -13,7 +13,7 @@ export default function Pricing() {
           Pricing
         </h2>
 
-        <div style={{
+        <div className="pricing-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '32px',

@@ -439,8 +439,9 @@ section h2 {
   }
 
   /* Pricing grid - force single column */
-  section > div > div {
+  .pricing-grid {
     grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
 
   /* Remove scale from Most Popular card on mobile */
