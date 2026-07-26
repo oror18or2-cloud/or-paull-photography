@@ -1,15 +1,20 @@
+import { useState, useEffect } from 'react';
+
 export default function Pricing() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <>
-      <style jsx>{`
-        @media (max-width: 768px) {
-          .pricing-grid {
-            grid-template-columns: 1fr !important;
-            gap: 16px !important;
-          }
-        }
-      `}</style>
-      <section id="pricing" style={{ padding: '60px 48px', background: '#FAFAF8' }}>
+    <section id="pricing" style={{ padding: '60px 48px', background: '#FAFAF8' }}>
       <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
         <h2 style={{
           fontSize: '28px',
@@ -24,8 +29,8 @@ export default function Pricing() {
 
         <div className="pricing-grid" style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '32px',
+          gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
+          gap: isMobile ? '16px' : '32px',
           margin: '0 auto'
         }}>
           {/* Card 1 */}
@@ -67,12 +72,12 @@ export default function Pricing() {
           <div className="pricing-card" style={{
             border: '2px solid #5C4A42',
             borderRadius: '8px',
-            padding: '40px',
+            padding: isMobile ? '24px 16px' : '40px',
             background: '#FAFAF8',
             textAlign: 'right',
             direction: 'rtl',
             position: 'relative',
-            transform: 'scale(1.05)'
+            transform: isMobile ? 'scale(1)' : 'scale(1.05)'
           }}>
             <div style={{
               position: 'absolute',
@@ -151,6 +156,5 @@ export default function Pricing() {
         </div>
       </div>
     </section>
-    </>
   );
 }
