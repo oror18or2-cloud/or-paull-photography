@@ -88,12 +88,24 @@ export default function Navigation() {
 
         @media (max-width: 768px) {
           .nav-container {
-            padding: 12px 16px;
-            gap: 16px;
+            padding: 12px 12px;
+            gap: 8px;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+          }
+
+          .logo h1 {
+            font-size: 18px !important;
           }
 
           .nav-menu {
             display: none;
+          }
+
+          .btn {
+            padding: 8px 12px;
+            font-size: 12px;
           }
 
           .mobile-menu-btn {

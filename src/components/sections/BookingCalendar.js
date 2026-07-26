@@ -42,8 +42,8 @@ export default function BookingCalendar() {
   };
 
   return (
-    <section style={{ padding: '64px 48px', background: '#FAFAF8' }}>
-      <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <section style={{ padding: '64px 24px', background: '#FAFAF8' }}>
+      <div className="container" style={{ maxWidth: '100%', margin: '0 auto', padding: '0' }}>
         <h2 style={{
           marginBottom: '48px',
           textAlign: 'center',
@@ -60,8 +60,10 @@ export default function BookingCalendar() {
           background: '#FAFAF8',
           border: '1px solid #E8D5D1',
           borderRadius: '4px',
-          padding: '48px',
-          textAlign: 'center'
+          padding: '24px',
+          textAlign: 'center',
+          maxWidth: '100%',
+          overflow: 'hidden'
         }}>
           {/* Month Navigation */}
           <div style={{
@@ -118,7 +120,7 @@ export default function BookingCalendar() {
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(7, 1fr)',
-            gap: '8px',
+            gap: '4px',
             marginBottom: '16px'
           }}>
             {hebrewDaysShort.map((day, idx) => (
@@ -142,7 +144,7 @@ export default function BookingCalendar() {
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(7, 1fr)',
-            gap: '8px',
+            gap: '4px',
             marginBottom: '32px'
           }}>
             {days.map((day, idx) => (
@@ -151,12 +153,12 @@ export default function BookingCalendar() {
                 onClick={() => handleDateSelect(day)}
                 disabled={!day}
                 style={{
-                  padding: '12px',
+                  padding: '8px',
                   background: day ? '#FAFAF8' : 'transparent',
                   border: day && selectedDate?.getDate() === day ? '2px solid #5C4A42' : '1px solid #E8D5D1',
                   borderRadius: '4px',
                   cursor: day ? 'pointer' : 'default',
-                  fontSize: '18px',
+                  fontSize: '14px',
                   fontWeight: '400',
                   color: day ? '#3E3B39' : 'transparent',
                   transition: 'all 200ms',
