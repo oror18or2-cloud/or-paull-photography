@@ -42,7 +42,6 @@ export default function Pricing() {
             textAlign: 'right',
             direction: 'rtl',
             flex: '1 1 calc(33.333% - 22px)',
-            minWidth: '250px'
           }}>
             <h3 style={{
               fontSize: '18px',
@@ -81,7 +80,6 @@ export default function Pricing() {
             position: 'relative',
             transform: isMobile ? 'scale(1)' : 'scale(1.05)',
             flex: '1 1 calc(33.333% - 22px)',
-            minWidth: '250px'
           }}>
             <div style={{
               position: 'absolute',
@@ -132,7 +130,6 @@ export default function Pricing() {
             textAlign: 'right',
             direction: 'rtl',
             flex: '1 1 calc(33.333% - 22px)',
-            minWidth: '250px'
           }}>
             <h3 style={{
               fontSize: '18px',
