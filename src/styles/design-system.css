@@ -436,11 +436,13 @@ section h2 {
   .pricing-grid {
     gap: 16px !important;
     grid-template-columns: 1fr !important;
+    max-width: 100% !important;
   }
 
   .pricing-card {
     padding: 24px 16px !important;
     width: 100% !important;
+    max-width: 100% !important;
     transform: scale(1) !important;
   }
 
