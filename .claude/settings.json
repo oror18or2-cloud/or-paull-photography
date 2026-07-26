@@ -1,0 +1,33 @@
+{
+  "model": "claude-opus-4-8",
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash",
+      "PowerShell",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep"
+    ]
+  },
+  "skills": {
+    "enabled": [
+      "find-skills",
+      "grill-me",
+      "design-taste-frontend-v1",
+      "ponytail",
+      "bug-hunter",
+      "task-decomposer",
+      "crewai"
+    ]
+  },
+  "env": {
+    "PROJECT_NAME": "Or Paull Photography",
+    "PROJECT_TYPE": "photography-booking-web-app",
+    "DESIGN_SYSTEM": "taste",
+    "CODE_STYLE": "ponytail"
+  }
+}

@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18.17"
+  NODE_ENV = "production"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  NEXT_PUBLIC_GA_ID = ""
+  NEXT_PUBLIC_FORMSPREE_ID = ""
+
+[context.deploy-preview.environment]
+  NEXT_PUBLIC_GA_ID = ""
+  NEXT_PUBLIC_FORMSPREE_ID = ""
