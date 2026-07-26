@@ -27,12 +27,7 @@ export default function Pricing() {
           Pricing
         </h2>
 
-        <div className="pricing-grid" style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '32px',
-          margin: '0 auto'
-        }}>
+        <div className="pricing-grid">
           {/* Card 1 */}
           <div className="pricing-card" style={{
             border: '1px solid #D4C4B9',
