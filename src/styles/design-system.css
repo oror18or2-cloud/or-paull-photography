@@ -173,6 +173,27 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Pricing Cards */
+.pricing-card {
+  border-radius: 8px;
+  padding: 40px;
+  background: #FAFAF8;
+  text-align: right;
+  direction: rtl;
+  width: 100%;
+}
+
+.pricing-card-1,
+.pricing-card-3 {
+  border: 1px solid #D4C4B9;
+}
+
+.pricing-card-2 {
+  border: 2px solid #5C4A42;
+  position: relative;
+  transform: scale(1.05);
+}
+
 /* Forms */
 .form-group {
   margin-bottom: var(--space-6);
@@ -443,15 +464,15 @@ section h2 {
   /* Pricing Cards - Stack on mobile */
   .pricing-grid {
     gap: 16px !important;
-    grid-template-columns: 1fr !important;
-    max-width: 100% !important;
-    width: 100% !important;
   }
 
   .pricing-card {
     padding: 24px 16px !important;
     width: 100% !important;
     max-width: 100% !important;
+  }
+
+  .pricing-card-2 {
     transform: scale(1) !important;
   }
 

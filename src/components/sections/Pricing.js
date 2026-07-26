@@ -29,14 +29,7 @@ export default function Pricing() {
 
         <div className="pricing-grid">
           {/* Card 1 */}
-          <div className="pricing-card" style={{
-            border: '1px solid #D4C4B9',
-            borderRadius: '8px',
-            padding: '40px',
-            background: '#FAFAF8',
-            textAlign: 'right',
-            direction: 'rtl',
-          }}>
+          <div className="pricing-card pricing-card-1">
             <h3 style={{
               fontSize: '18px',
               marginBottom: '8px',
@@ -64,16 +57,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 2 */}
-          <div className="pricing-card" style={{
-            border: '2px solid #5C4A42',
-            borderRadius: '8px',
-            padding: isMobile ? '24px 16px' : '40px',
-            background: '#FAFAF8',
-            textAlign: 'right',
-            direction: 'rtl',
-            position: 'relative',
-            transform: isMobile ? 'scale(1)' : 'scale(1.05)',
-          }}>
+          <div className="pricing-card pricing-card-2">
             <div style={{
               position: 'absolute',
               top: '-15px',
@@ -115,14 +99,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 3 */}
-          <div className="pricing-card" style={{
-            border: '1px solid #D4C4B9',
-            borderRadius: '8px',
-            padding: '40px',
-            background: '#FAFAF8',
-            textAlign: 'right',
-            direction: 'rtl',
-          }}>
+          <div className="pricing-card pricing-card-3">
             <h3 style={{
               fontSize: '18px',
               marginBottom: '8px',
