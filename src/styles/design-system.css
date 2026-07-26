@@ -420,9 +420,15 @@ section h2 {
   }
 
   /* Pricing Cards - Stack on mobile */
+  #pricing .pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
   .pricing-card {
     padding: 24px 16px !important;
     width: 100% !important;
+    transform: scale(1) !important;
   }
 
   .pricing-card h3 {
@@ -436,17 +442,6 @@ section h2 {
   .pricing-card p {
     margin: 4px 0 !important;
     line-height: 1.4 !important;
-  }
-
-  /* Pricing grid - force single column */
-  .pricing-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
-  /* Remove scale from Most Popular card on mobile */
-  .pricing-card {
-    transform: scale(1) !important;
   }
 
   /* Booking Calendar - responsive on mobile */
