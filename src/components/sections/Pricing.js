@@ -20,7 +20,7 @@ export default function Pricing() {
           margin: '0 auto'
         }}>
           {/* Card 1 */}
-          <div style={{
+          <div className="pricing-card" style={{
             border: '1px solid #D4C4B9',
             borderRadius: '8px',
             padding: '40px',
@@ -55,7 +55,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 2 */}
-          <div style={{
+          <div className="pricing-card" style={{
             border: '2px solid #5C4A42',
             borderRadius: '8px',
             padding: '40px',
@@ -106,7 +106,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 3 */}
-          <div style={{
+          <div className="pricing-card" style={{
             border: '1px solid #D4C4B9',
             borderRadius: '8px',
             padding: '40px',

@@ -418,6 +418,47 @@ section h2 {
     height: 36px;
     font-size: 18px;
   }
+
+  /* Pricing Cards - Stack on mobile */
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Pricing cards - responsive padding and text */
+  .pricing-card {
+    padding: 24px 16px !important;
+  }
+
+  .pricing-card h3 {
+    font-size: 16px !important;
+  }
+
+  .pricing-card > div {
+    font-size: 13px !important;
+  }
+
+  .pricing-card p {
+    margin: 4px 0 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Booking Calendar - responsive on mobile */
+  .booking-calendar {
+    padding: 24px !important;
+  }
+
+  .booking-calendar h3 {
+    font-size: 20px !important;
+  }
+
+  .booking-calendar button {
+    padding: 10px !important;
+    font-size: 16px !important;
+  }
+
+  [style*="gridTemplateColumns: 'repeat(7"] {
+    gap: 4px !important;
+  }
 }
 
 /* Utility Classes */

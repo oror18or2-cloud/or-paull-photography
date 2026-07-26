@@ -56,7 +56,7 @@ export default function BookingCalendar() {
           בחירת תאריך
         </h2>
 
-        <div style={{
+        <div className="booking-calendar" style={{
           background: '#FAFAF8',
           border: '1px solid #E8D5D1',
           borderRadius: '4px',

@@ -93,3 +93,5 @@ customer_data/
 .next/
 node_modules/
 .env.local
+
+.vercel
