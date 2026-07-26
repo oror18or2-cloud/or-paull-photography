@@ -1,6 +1,15 @@
 export default function Pricing() {
   return (
-    <section id="pricing" style={{ padding: '60px 48px', background: '#FAFAF8' }}>
+    <>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .pricing-grid {
+            grid-template-columns: 1fr !important;
+            gap: 16px !important;
+          }
+        }
+      `}</style>
+      <section id="pricing" style={{ padding: '60px 48px', background: '#FAFAF8' }}>
       <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
         <h2 style={{
           fontSize: '28px',
@@ -142,5 +151,6 @@ export default function Pricing() {
         </div>
       </div>
     </section>
+    </>
   );
 }
