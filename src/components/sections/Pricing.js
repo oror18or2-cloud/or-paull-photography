@@ -28,8 +28,8 @@ export default function Pricing() {
         </h2>
 
         <div className="pricing-grid" style={{
-          display: 'flex',
-          flexWrap: 'wrap',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '32px',
           margin: '0 auto'
         }}>
@@ -41,7 +41,6 @@ export default function Pricing() {
             background: '#FAFAF8',
             textAlign: 'right',
             direction: 'rtl',
-            flex: '1 1 calc(33.333% - 22px)',
           }}>
             <h3 style={{
               fontSize: '18px',
@@ -79,7 +78,6 @@ export default function Pricing() {
             direction: 'rtl',
             position: 'relative',
             transform: isMobile ? 'scale(1)' : 'scale(1.05)',
-            flex: '1 1 calc(33.333% - 22px)',
           }}>
             <div style={{
               position: 'absolute',
@@ -129,7 +127,6 @@ export default function Pricing() {
             background: '#FAFAF8',
             textAlign: 'right',
             direction: 'rtl',
-            flex: '1 1 calc(33.333% - 22px)',
           }}>
             <h3 style={{
               fontSize: '18px',
