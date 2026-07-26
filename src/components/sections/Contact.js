@@ -114,7 +114,7 @@ export default function Contact() {
             WhatsApp
           </a>
           <a
-            href="https://instagram.com/orpaulphotography"
+            href="https://www.instagram.com/byor.photography?igsh=MXFsbWF2dXpweThjbw=="
             target="_blank"
             rel="noopener noreferrer"
             style={{
