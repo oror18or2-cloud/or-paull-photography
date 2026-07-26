@@ -1,5 +1,4 @@
 {
-  "projectName": "or-paull-photography",
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
