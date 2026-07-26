@@ -385,7 +385,7 @@ section h2 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   h1 {
     font-size: var(--text-3xl);
   }
