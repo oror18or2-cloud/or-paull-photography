@@ -29,7 +29,7 @@ export default function Pricing() {
 
         <div className="pricing-grid" style={{
           display: 'grid',
-          gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(100%, 1fr))',
           gap: '32px',
           margin: '0 auto'
         }}>
