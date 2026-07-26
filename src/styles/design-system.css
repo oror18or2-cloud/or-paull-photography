@@ -432,11 +432,18 @@ section h2 {
     font-size: 18px;
   }
 
+  /* Pricing section - mobile adjustments */
+  #pricing .container {
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
+
   /* Pricing Cards - Stack on mobile */
   .pricing-grid {
     gap: 16px !important;
     grid-template-columns: 1fr !important;
     max-width: 100% !important;
+    width: 100% !important;
   }
 
   .pricing-card {
